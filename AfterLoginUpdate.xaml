@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="ACSC.AfterLoginUpdate"
+             xmlns:viewmodel="clr-namespace:ACSC.viewmodel"
+             x:DataType="viewmodel:AfterLoginUpdateVm"
+             Title="Add/update students details" >
+            
+    <StackLayout Spacing="10" Padding="20">
+    <VerticalStackLayout>
+        <Label  Text="FirstName" />
+            <Entry Placeholder="firstname"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label  Text="SecondName" />
+            <Entry Placeholder="firstname"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label  Text="Reg/No" />
+            <Entry Placeholder="firstname"/>
+        </VerticalStackLayout>
+            
+        
+         <Button Text="save" 
+          Clicked="OnSaveClicked"      
+          Command="{Binding PopCommand}"/>
+
+        
+    </StackLayout>
+</ContentPage>

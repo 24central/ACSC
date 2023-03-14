@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ACSC.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ACSC"
+    xmlns:Afterloginns="clr-namespace:ACSC.views.afterlogin"
+    >
+
+    <ShellContent
+        Title=" ACSC STUDENTS PORTAL"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <FlyoutItem>
+        <ShellContent
+          Title="dashboard" 
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="Afterlogin" />
+            
+    </FlyoutItem>
+
+</Shell>

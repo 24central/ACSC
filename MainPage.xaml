@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ACSC.MainPage"
+             xmlns:viewmodel="clr-namespace:ACSC.viewmodel"
+             x:DataType="viewmodel:Mainviewmodel">
+
+    <ContentView BackgroundColor="#590BD0" >
+        
+        <Grid Grid.Row="0"
+           
+            BackgroundColor="WhiteSmoke"
+            VerticalOptions="Center"
+           
+            Padding="100">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="80"/>
+
+            </Grid.RowDefinitions>
+
+            <Label
+                Grid.Row="0"
+                
+                Text="ACSC LOGIN"
+                TextDecorations="Underline"
+                FontSize="Title"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                
+                />
+            
+             <Label
+                 Grid.Row="1"
+               Text=" ENTER REG NO/ID"
+               VerticalOptions="Center"
+                 TextColor="Black"
+                 Padding="0,0,0,10"
+              />
+                   
+              <Entry
+                  Grid.Row="2"
+                Placeholder="username"
+                PlaceholderColor="Grey"
+                 
+               />
+            <BoxView HeightRequest="1" Grid.Row="3" Color="DarkMagenta"/>
+            <Label
+                   Grid.Row="4"
+                Text=" ENTER PASSWORD"
+                TextColor="Black"
+                   Padding="0,0,0,10"
+               />
+
+            <Entry
+                   Grid.Row="5"
+                 Placeholder="password"
+                PlaceholderColor="Grey"
+                IsPassword="True"
+                />
+
+            <BoxView HeightRequest="1" Grid.Row="6" Color="DarkMagenta"/>
+            <HorizontalStackLayout Grid.Row="7" >
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        
+                    </Grid.ColumnDefinitions>
+                    <VerticalStackLayout Grid.Column="0" Spacing="10"  Padding="0,10,0,0" Margin="0,0,0,0">
+                        <RadioButton
+                       
+                        />
+                        <RadioButton
+                            
+                                />
+                   
+                    
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1"  Padding="0,18,50,0" Spacing="25">
+                         <Label Text="STUDENT"
+                           VerticalOptions="Center"
+                           
+                           />
+                    <Label Text="LECTURER"
+                           VerticalOptions="Center"
+                           
+                           />
+                    </VerticalStackLayout>
+                    
+                </Grid>
+            </HorizontalStackLayout>
+            
+            <Button
+                Grid.Row="8"
+                Text="Login"
+                Command="{Binding NavigateCommand}"
+                Margin="0,20,0,0"
+              />
+           
+            <VerticalStackLayout Grid.Row="9"  Margin="30,200,70,0" >
+                
+                <Label
+                    Padding="50,0,0,0"
+                    CharacterSpacing="2"
+                   Text="@ Copyright 2022 
+                    RubiaTechLimited
+                    @chukauniversity.com"
+                    FontAttributes="Italic,Bold"
+                    FontSize="15"
+                    
+             
+             />
+            </VerticalStackLayout>
+                
+           
+        </Grid>
+     
+    </ContentView>
+
+</ContentPage>
